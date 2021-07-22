@@ -47,6 +47,8 @@ def create_user(username, password):
     )
     if len(other_users) > 0:
         return (False, 'Username taken.')
+
+    query = f'VALUES (\'{username}\', \'{password}\');' # MODIFIED
     execute(
         'INSERT INTO users (username, password)'
         f'VALUES (\'{username}\', \'{password}\');'
