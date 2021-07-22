@@ -71,4 +71,12 @@ def init():
     )
 ```
 
-Using my CVE Hunting setup, I ran the provided source code with a few [modifications](https://raw.githubusercontent.com/0xgrey/CTF-Writeups/main/2021/redpwnCTF/web/cool/app.py) to the code for simplicity.
+### Exploitation - Local
+
+Using my CVE Hunting setup, I ran the provided source code with a few [modifications](https://raw.githubusercontent.com/0xgrey/CTF-Writeups/main/2021/redpwnCTF/web/cool/modified_app.py) to the code for simplicity.
+
+First, I added `db/db.sqlite3` to the app's directory to prevent runtime errors. Then, I ran the modified application on VSCode with debug mode enabled to view the SQL queries being executed.
+
+
+
+### Exploitation - Remote
